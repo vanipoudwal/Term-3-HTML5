@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body
+{
+	background-color: black;
+}
+h2
+{
+	font-family: verdana;
+	font-size: 30px;
+	color: darkcyan;
+	text-align: center;
+}
+h3
+{
+	text-align: center;
+	font-family: verdana;
+	color: darkcyan;
+	font-size: 20px;
+}
+#para1
+{
+	font-family: verdana;
+	font-size: 18px;
+	text-align: center;
+	color: darkcyan;
+}
+</style>
+<script>
+function over(img,imgsrc)
+{
+	img.src = imgsrc;
+}
+function out(img,imgsrc)
+{
+	img.src = imgsrc;
+}
+</script>
+</head>
+<body>
+<h2>Product Details</h2>
+<hr><hr>
+<h3>Check Out The Latest Products On Our Website. Exciting Discounts, Hurry!!</h3>
+<div style = "position:absolute; top:180px: left:400px;">
+<p id = "para1">Move The Mouse Over The Product Image.</p>
+<img id = "productImage1" src = "Product1.png" height = "150"
+onmouseover = "over(this,'Product1Details.jpg')" onmouseout = "out(this,'Product1.png')"/>
+<img id = "productImage2" src = "Product2.png" height = "150"
+onmouseover = "over(this,'Product2Details.jpg')" onmouseout = "out(this,'Product2.png')"/>
+</div>
+</body>
+</html>

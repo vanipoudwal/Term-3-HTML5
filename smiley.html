@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<body>
+<canvas id = "myCanvas" width = "500" height = "500" style = "border: 2px solid black">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(225,225,175,0,Math.PI*2,false);
+ctx.closePath();
+ctx.fillStyle = "yellow";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(150,167,16,0,Math.PI*2,false);
+ctx.closePath();
+ctx.fillStyle = "black";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(285,167,16,0,Math.PI*2,false);
+ctx.closePath();
+ctx.fillStyle = "black";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(220,245,65,0,Math.PI*1,false);
+ctx.closePath();
+ctx.fillStyle = "black";
+ctx.fill();
+
+</script>
+</body>
+</html>

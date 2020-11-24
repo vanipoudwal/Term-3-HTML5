@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<body>
+<p id = "button">Click Here To Know Your Location Coordinates: </p>
+<button onclick = "getLocation()">Get Location</button>
+<script>
+var geo = document.getElementById("button");
+function showError(PositionError)
+{
+	switch(PositionError.code)
+	{
+		case PositionError.PERMISSION_DENIED:
+		x.innerHTML = "User denied the request for tracking the location"
+		break;
+
+		case PositionError.POSITION_UNAVAILABLE:
+		x.innerHTML = "User's location is not available"
+		break;
+
+		case PositionError.TIMEOUT:
+		x.innerHTML = "The request to retrieve user's location is timed out"
+		break;
+
+		case PositionError.UNKNOWN_ERROR:
+		x.innerHTML = "An unknown error occurred"
+		break;
+	}
+}
+</script>
+</body>
+</html>

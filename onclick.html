@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<body>
+
+<p>click the button to display the platform of the browser.</p>
+<button onclick = "myfunction()">try it</button>
+
+<p id = "demo"></p>
+
+<script>
+function myfunction()
+{
+var x = "platform: " + navigator.platform;
+document.getElementsById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

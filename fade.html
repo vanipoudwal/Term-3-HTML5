@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<script type = "text/javascript" src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type = "text/javascript">
+$(document).ready(function(){
+$("div").click(function(){
+$(this).fadeOut(1200);
+});
+$("button").click(function(){
+$("div").fadeIn(1200);
+});
+});
+</script>
+</head>
+<body>
+<div style = "background: yellow; width: 200px">
+Fade Me Away!
+</div>
+<br>
+<button>Restore</button>
+</body>
+</html>

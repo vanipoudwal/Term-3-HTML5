@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<body>
+<canvas id = "myCanvas" width = "300" height = "300" style = "border: 1px solid black">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.shadowBlur = 40;
+ctx.fillStyle = "pink";
+ctx.shadowColor = "black";
+ctx.fillRect(20,20,100,80);
+ctx.shadowColor = "blue";
+ctx.fillRect(140,20,100,80);
+</script>
+</body>
+</html>

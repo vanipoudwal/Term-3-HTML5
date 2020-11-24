@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<body>
+
+<p id = "p1" onmousedown = "mousedown()" onmouseup = "mouseup()">
+Click the text! The mousedown() function is triggered when the mouse button is pressed down over.</p>
+
+<script>
+function mousedown()
+{
+document.getElementById("p1").style.color = "red";
+}
+
+function mouseup()
+{
+document.getElementById("p1").style.color = "green";
+}
+</script>
+
+</body>
+</html>

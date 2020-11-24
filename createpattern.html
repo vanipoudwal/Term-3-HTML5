@@ -1,0 +1,21 @@
+<html>
+<body>
+<p>Image to use: </p>
+<img src = "pattern.png" id = "pattern">
+<p>Canvas:</p>
+<button onclick = "draw('repeat')">Repeat</button>
+<canvas id = "myCanvas" width = "300" height = "150" style = "border: 1px solid #d3d3d3;">
+<script>
+function draw(direction)
+{
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var img = document.getElementById("pattern");
+var pat = ctx.createPattern(img,direction);
+ctx.rect(0,0,300,150);
+ctx.fillStyle = pat;
+ctx.fill();
+}
+</script>
+</body>
+</html>

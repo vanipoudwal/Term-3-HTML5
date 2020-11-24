@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<style>
+table
+{
+	text-align: center;
+}
+h2
+{
+	font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+}
+h3
+{
+	font-family: verdana;
+	color: orange;
+	font-size: 20px;
+	text-align: center;
+}
+#para1
+{
+	font-family: verdana;
+	font-size: 14px;
+	color: blue;
+	text-align: center;
+}
+</style>
+<script>
+var images;
+function preloadimages()
+{
+	images = new
+	Array('product1.png','product2.png','product1Details.jpg','product2Details.jpg');
+	preload(images);
+}
+function preload(img)
+{
+	for(var i = 0; i<img.length; i++)
+	{
+		var im = new Image();
+		im.src = img[i];
+	}
+}
+function over(a)
+{
+	document.images[a].src = images[a+2];
+}
+function out(a)
+{
+	document.images[a].src = images[a];
+}
+</script>
+</head>
+<body onload = preloadimages()>
+<h2>Product Categories</h2>
+<hr><hr>
+<h3>Check Out The Latest Products On Our Website. Exciting Discounts, Hurry!!</h3>
+<div style = "position:absolute; top:180px: left:400px;">
+<p id = "para1">Move The Cursor Over The Product Image To View The Product Details.</p>
+<table border = "0">
+<tr>
+<td>
+<img src = "Product1.png" onmouseover = "over(0)" onmouseout = "out(0)" />
+</td>
+<td>
+<img src = "Product2.png" onmouseover = "over(1)" onmouseout = "out(1)" />
+</td>
+</tr>
+</body>
+</html>

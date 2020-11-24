@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<script type = "text/javascript" src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type = "text/javascript">
+$(document).ready(function(){
+$(".flipbut").click(function(){
+$(".thought").slideToggle();
+});
+});
+</script>
+<style type = "text/css">
+div.thought,.flipbut { /*styling the div element with the class attribute specified as "thought", and the button with the class attribute specified as "flipbut" */}
+margin : 0px;
+padding : 5px;
+text-align : center;
+background : beige;
+border : solid 1px;
+}
+div.thought
+{
+height : 120px;
+display : none;
+}
+</style>
+</head>
+<body>
+<br><br>
+<button style = "backgound-color: "beige" class = "flipbut" text-align = "center">
+Show/Hide the thought of the Day.
+</button>
+<div class = "thought">
+<p>The thought of the day is : </p>
+<p>Where there is a will, there is a way!</p>
+</div>
+</body>
+</html>

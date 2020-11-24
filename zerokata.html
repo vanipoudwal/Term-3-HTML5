@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<body>
+<canvas id = "myCanvas" width = "440" height = "440" style = "border: 10px solid maroon">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.strokeStyle = "maroon";
+
+ctx.rect(40,40,120,120);
+ctx.stroke();
+ctx.rect(40,40,240,120);
+ctx.stroke();
+ctx.rect(40,40,360,120);
+ctx.stroke();
+
+ctx.rect(40,40,120,240);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(220,220,50,0,Math.PI*2,false);
+ctx.fillStyle = "cyan";
+ctx.fill();
+ctx.stroke();
+ctx.rect(40,40,360,240);
+ctx.stroke();
+
+ctx.rect(40,40,120,360);
+ctx.stroke();
+ctx.rect(40,40,240,360);
+ctx.stroke();
+ctx.rect(40,40,360,360);
+ctx.stroke();
+
+</script>
+</body>
+</html>

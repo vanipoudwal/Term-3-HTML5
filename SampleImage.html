@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body
+{
+	background-color: black;
+}
+h2
+{
+	font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+}
+h3
+{
+	font-family: verdana;
+	color: orange;
+	font-size: 20px;
+	text-align: center;
+}
+#para1
+{
+	font-family: verdana;
+	font-size: 14px;
+	color: blue;
+}
+</style>
+<script>
+function over(img,imgsrc)
+{
+	if(document.images)
+	{
+		document.images[img].src = imgsrc;
+	}
+}
+function out(img,imgsrc)
+{
+	if(document.images)
+	{
+		document.images[img].src = imgsrc;
+	}
+}
+</script>
+</head>
+<body>
+<h2>Product Categories</h2>
+<hr><hr>
+<h3>Check Out The Latest Products On Our Website. Exciting Discounts, Hurry!!</h3>
+<div style = "position:absolute; top:180px: left:450px;">
+<p id = "para1">Choose The Desired Product Image To View The Product Details.</p>
+
+<a href = "#" onmouseover = "over('productImage1','Product1Details.jpg');"
+onmouseout = "out('productImage1','product1.png');">
+<img id = "productImage1" src = "Product1.png" border = "0"/>
+</a>
+<a href = "#" onmouseover = "over('productImage2','Product2Details.jpg');"
+onmouseout = "out('productImage2','product2.png');">
+<img id = "productImage2" src = "Product2.png" border = "0"/>
+</a>
+
+</div>
+</body>
+</html>

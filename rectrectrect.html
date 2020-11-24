@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<body>
+<canvas id = "myCanvas" width = "600" height = "300" style = "border: 1px solid black">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.rect(30,40,120,120);
+ctx.stroke();
+ctx.fillRect(160,40,120,120);
+ctx.stroke();
+ctx.strokeRect(300,40,120,120);
+ctx.fillRect(460,40,120,120);
+ctx.clearRect(500,60,40,40);
+</script>
+</body>
+</html>

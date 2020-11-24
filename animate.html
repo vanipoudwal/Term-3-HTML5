@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<script src = "https://code.jquery.com/jquery-3.4.1.js">
+</script>
+<script>
+$(document).ready(function(){
+$("div").mouseenter(function(){
+$("div").animate({
+center: '250px',
+opacity: '0.5',
+height: '250px',
+width: '250px'
+});
+});
+$("div").mouseleave(function(){
+$("div").animate({
+opacity: '1',
+height: '100px',
+width: '100px'
+});
+});
+});
+</script>
+</head>
+<body>
+<div style = "background: #98bf21; height: 100px; width: 100px; position: absolute;">
+</div>
+<button>Restore</button>
+</body>
+</html>

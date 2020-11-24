@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<script type = "text/javascript" src = "C:\Users\VANI POUDWAL\Desktop\vaniii\RGraph.common.core.js"></script>
+<script type = "text/javascript" src = "C:\Users\VANI POUDWAL\Desktop\vaniii\RGraph.bar.js"></script>
+<title>Bar Chart</title>
+</head>
+
+<body>
+<canvas width = "500" height = "250" ID = "test" style = "border:2px solid black">
+</canvas>
+<script type = "text/javascript" charset = "utf-8">
+var bar = new RGraph.Bar('test',[10,30,20,10]);
+bar.Set('chart.colors',['red']);
+bar.Set('chart.title',"Sales Report");
+bar.Set('chart.labels',["10","20","30","40"]);
+bar.Draw();
+</script>
+</body>
+</html>

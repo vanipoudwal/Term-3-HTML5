@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<body onload = setImage()>
+<canvas id = "myCanvas" width = "800" height = "500" style = "border:2px solid black">
+Your browser doesn't support the HTML5 canvas tag.</canvas>
+<script>
+
+function setImage()
+{
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+var img = new Image();
+img.src = "shinchan.jpg";
+img.onload = function()
+{
+ctx.drawImage(img,25,150,300,300);
+}
+ctx.rotate(50);
+setImage1();
+}
+
+function setImage1()
+{
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+var img = new Image();
+img.src = "doraemon.jpg";
+img.onload = function()
+{
+ctx.drawImage(img,325,150,300,300);
+}
+}
+
+</script>
+</body>
+</html>
