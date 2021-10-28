@@ -1,2 +1,2 @@
 # Term-3-HTML5
-This Repository Is Used To Write HTML5 Code.
+This repository is used to write HTML5 code.
